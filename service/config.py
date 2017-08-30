@@ -14,3 +14,4 @@ SECRET_KEY = os.getenv('SECRET_KEY', None)
 assert SECRET_KEY
 
 THREADS_PER_PAGE = 2
+
