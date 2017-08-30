@@ -15,4 +15,4 @@ assert SECRET_KEY
 
 THREADS_PER_PAGE = 2
 
-a = 1/0
+a = 1/1
