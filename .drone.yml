@@ -18,13 +18,3 @@ pipeline:
       - /app/env/bin/python setup.py bdist
       - /app/env/bin/python setup.py install
       # All data is retained in the /app/env directory for all remaining steps
-
-  functional-test:
-    image: josebarn/python-2.7-base:latest
-    commands:
-      - /app/env/bin/nosetests -v service/test/functional/tests.py
-    environment:
-        - DEBUG=True
-        - SECRET_KEY=asdklfjeoja039rjdlkjfaoi3rdk
-        # Note database is replaces with the hostname of the database service
-        - DATABASE_URL=postgres://username:password@database/test
