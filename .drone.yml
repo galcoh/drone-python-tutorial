@@ -25,7 +25,7 @@ pipeline:
     dockerfile: ./docker/Dockerfile
     tags:
       - latest
-    secrets: [AKIAIYSUVJ7TWCSJD4RQ, glI9REndyq1ll6obng4AKmvN48iEOgZ4MyGmXx4o]
+    secrets: [ECR_ACCESS_KEY, ECR_SECRET_KEY]
     when:
       # Only publish on a push
       # Execute the event for optional [push, pull_request, tag, deployment]
